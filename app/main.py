@@ -26,4 +26,4 @@ async def create_book(book: BookCreate):
 
 @app.get("/books/", response_model=List[BookResponse])
 async def get_books():
-    return fake_books_db
+    return "fake_books_db"
