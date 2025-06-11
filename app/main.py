@@ -4,16 +4,17 @@ from typing import List
 
 app = FastAPI()
 
-# ---- Mock Data Storage ----
+
 fake_books_db = []
 
-# ---- Schemas ----
+
 class BookCreate(BaseModel):
     title: str
     author: str
 
 class BookResponse(BookCreate):
     id: int
+
 
 
 
