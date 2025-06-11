@@ -1,0 +1,4 @@
+[
+  "tests/test_books.py::test_create_book",
+  "tests/test_books.py::test_get_books"
+]
