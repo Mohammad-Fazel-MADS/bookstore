@@ -15,7 +15,7 @@ class BookCreate(BaseModel):
 class BookResponse(BookCreate):
     id: int
 
-# ---- Endpoints ----
+
 
 @app.post("/books/", response_model=BookResponse)
 async def create_book(book: BookCreate):
@@ -25,4 +25,4 @@ async def create_book(book: BookCreate):
 
 @app.get("/books/", response_model=List[BookResponse])
 async def get_books():
-    return "fake_books_db"
+    return fake_books_db
